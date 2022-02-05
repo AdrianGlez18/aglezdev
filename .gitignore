@@ -1,0 +1,9 @@
+build
+dist
+package-lock.json
+node_modules
+.next
+tmpfiles.txt
+tmp
+private
+.env
