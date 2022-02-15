@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image, HStack, VStack, Tag } from "@chakra-ui/react";
+import { Box, Container, Heading, Image, Stack, HStack, VStack, Tag, WrapItem, Wrap } from "@chakra-ui/react";
 import Snowfall from "react-snowfall";
 import Link from "next/link";
 import styled from "@emotion/styled";
@@ -51,32 +51,28 @@ const Home = () => {
                                 <Heading as="h4" variant="section-sub-title">
                                     Web (full-stack)
                                 </Heading>
-                                <HStack spacing={3}>
+                                <Wrap spacing={3} align='center' justify='center'>
                                     <Tag size={'md'} key={'next'} variant='solid' colorScheme='teal'>Next.js</Tag>
                                     <Tag size={'md'} key={'react'} variant='solid' colorScheme='teal'>React</Tag>
                                     <Tag size={'md'} key={'express'} variant='solid' colorScheme='teal'>Express</Tag>
                                     <Tag size={'md'} key={'node'} variant='solid' colorScheme='teal'>Node.js</Tag>
                                     <Tag size={'md'} key={'mongodb'} variant='solid' colorScheme='teal'>MongoDB</Tag>
                                     <Tag size={'md'} key={'typescript'} variant='solid' colorScheme='teal'>Typescript</Tag>
-                                </HStack>
+                                </Wrap>
                                 <Heading as="h4" variant="section-sub-title">
                                     Mobile
                                 </Heading>
-                                <VStack>
-                                    <HStack spacing={3}>
-                                        <Tag size={'md'} key={'dart'} variant='solid' colorScheme='teal'>Dart</Tag>
-                                        <Tag size={'md'} key={'flutter'} variant='solid' colorScheme='teal'>Flutter</Tag>
-                                    </HStack>
-                                </VStack>
+                                <Wrap spacing={3} align='center' justify='center'>
+                                    <Tag size={'md'} key={'dart'} variant='solid' colorScheme='teal'>Dart</Tag>
+                                    <Tag size={'md'} key={'flutter'} variant='solid' colorScheme='teal'>Flutter</Tag>
+                                </Wrap>
                                 <Heading as="h4" variant="section-sub-title">
                                     Blockchain
                                 </Heading>
-                                <VStack>
-                                    <HStack spacing={3}>
-                                        <Tag size={'md'} key={'solidity'} variant='solid' colorScheme='teal'>Solidity</Tag>
-                                        <Tag size={'md'} key={'web3'} variant='solid' colorScheme='teal'>Web3 (EVM + React/Next)</Tag>
-                                    </HStack>
-                                </VStack>
+                                <Wrap spacing={3} align='center' justify='center'>
+                                    <Tag size={'md'} key={'solidity'} variant='solid' colorScheme='teal'>Solidity</Tag>
+                                    <Tag size={'md'} key={'web3'} variant='solid' colorScheme='teal'>Web3 (EVM + React/Next)</Tag>
+                                </Wrap>
                             </Section>
                         </Box>
                     </Box>
