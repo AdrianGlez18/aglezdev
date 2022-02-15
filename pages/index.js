@@ -3,14 +3,19 @@ import Snowfall from "react-snowfall";
 import Link from "next/link";
 import styled from "@emotion/styled";
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
-import theme from "../lib/theme";
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { Section } from "../components/customStyledComponents";
 import { getDarkHome, getLightHome } from "../lib/imageMode";
+import useTranslation from 'next-translate/useTranslation'
+import '../i18n.json'
 
 const Home = () => {
-    const { colorMode, toggleColorMode } = useColorMode()
-
+    const { colorMode, toggleColorMode } = useColorMode();
+    const { t, lang } = useTranslation('home');
+    const sectTitle = t('aboutTitle');
+    const about = t('aboutText');
+    console.log(lang);
+    console.log(t('aboutText'));
     return (
         <BgImage >
             <Container>
@@ -40,9 +45,9 @@ const Home = () => {
 
                             <Section delay={0.3}>
                                 <Heading as="h3" variant="section-title">
-                                    About
+                                    {sectTitle}
                                 </Heading>
-                                <p>Hello! My name is Adrian and I am currently studying Computer Science. I am specially interested in Web (full-stack), Blockchain and Mobile development. Allways willing to learn new languages, frameworks or technologies!</p>
+                                {about}
                             </Section>
                             <Section delay={0.3}>
                                 <Heading as="h3" variant="section-title">
