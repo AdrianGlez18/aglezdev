@@ -2,14 +2,17 @@ import Logo from "./logo";
 import NextLink from "next/link";
 import { Link, Box, Container, Flex, Heading, Stack, Text, Menu, MenuButton, MenuItem, MenuList, IconButton, useColorModeValue } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-
+import useTranslation from 'next-translate/useTranslation'
+import styled from '@emotion/styled'
 import ThemeButton from './themeButton'
+import LangButton from "./langButton";
 //import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, currentPath, _target, children, ...props }) => {
   const isActive = (currentPath === href)
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   const activeBgColor = useColorModeValue('grassTeal', 'grassTeal', "grassTeal")
+  
   return (
     <NextLink href={href} passHref>
       <Link
@@ -27,6 +30,7 @@ const LinkItem = ({ href, currentPath, _target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
+  const { t, lang } = useTranslation('common');
 
   return (
     <Box
@@ -74,8 +78,10 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={3} align="right">
+        <LangButton lang={lang}/>
           <ThemeButton />
+          
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -109,3 +115,7 @@ const Navbar = props => {
 }
 
 export default Navbar
+
+const PadLeft = styled.div`
+margin-left: 1em;
+`
