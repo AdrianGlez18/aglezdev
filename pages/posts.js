@@ -4,13 +4,13 @@ import Link from "next/link";
 import styled from "@emotion/styled";
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
-import theme from "../lib/theme";
+import useTranslation from 'next-translate/useTranslation'
 import { Section } from "../components/customStyledComponents";
 import { getDarkHome, getLightHome } from "../lib/imageMode";
 
 const Home = () => {
     const { colorMode, toggleColorMode } = useColorMode()
-
+    const { t, lang } = useTranslation('common');
     return (
         <BgImage >
             <Container>
@@ -42,7 +42,7 @@ const Home = () => {
                                 <Heading as="h3" variant="section-title">
                                     Posts
                                 </Heading>
-                                <p>This page is still under development!</p>
+                                <p>{t('dev')}</p>
                             </Section>
                         </Box>
                     </Box>

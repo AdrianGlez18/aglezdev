@@ -14,8 +14,6 @@ const Home = () => {
     const { t, lang } = useTranslation('home');
     const sectTitle = t('aboutTitle');
     const about = t('aboutText');
-    console.log(lang);
-    console.log(t('aboutText'));
     return (
         <BgImage >
             <Container>

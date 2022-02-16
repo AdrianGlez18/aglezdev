@@ -1,0 +1,7 @@
+{
+    "title": "Proyectos",
+    "desc": "Lista de mis proyectos realizados o en curso. Esta sección está aún en desarrollo, por lo que no todos los proyectos aparecen aún.",
+    "jtiapp": "App móvil de código abierto para un evento. Incluye información sobre el evento, y un sistema para generar y leer QRs, destinado a pasar datos de contacto a empresas.",
+    "jtiweb": "Web que desarrollé para las JTI, un evento que coorganicé en mi universidad.",
+    "pdfheaven": "Webapp de código libre para trabajar con pdfs (Unir PDF, convertir imágenes, quitar páginas...)"
+}
