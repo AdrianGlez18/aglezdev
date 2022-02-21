@@ -1,28 +1,18 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import React, { useState, useEffect } from "react";
 import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa'
-import { IconButton, useColorMode, useColorModeValue, Button } from '@chakra-ui/react'
-import theme from '../lib/theme';
-import styled from '@emotion/styled';
-
-const useAudio = url => {
-    const [audio, setAudio] = useState(new Audio(url));
-
-    const [playing, setPlaying] = useState(false);
-
-    const toggleVolume = () => setPlaying(!playing);
-
-    useEffect(() => {
-        playing ? audio.play() : audio.pause();
-    },
-        [playing]
-    );
-
-    return [playing, toggleVolume];
-};
+import { useColorModeValue, Button } from '@chakra-ui/react'
 
 const Player = ({ url }) => {
-    const [playing, toggleVolume] = useAudio(url);
+    const [playing, setPlaying] = useState(false);
+    const [audio] = useState(typeof Audio !== "undefined" && new Audio(url));
+
+    useEffect(() => {
+        playing ? audio.play() : audio.pause()
+
+    }, [playing])
+
+    const toggleVolume = () => setPlaying(!playing);
 
     return (
         <AnimatePresence exitBeforeEnter initial={false}>

@@ -13,24 +13,22 @@ const Videos = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     const { t, lang } = useTranslation('common');
     return (
-        <BgImage >
-            <Container>
-                <Box display={{ md: 'flex' }}>
-                    <Box flexGrow={1}>
+        <Container>
+            <Box display={{ md: 'flex' }}>
+                <Box flexGrow={1}>
 
-                        <Box bg="transparent" align="center" mt={5}>
-                            <Profile />
-                            <Section delay={0.3}>
-                                <Heading as="h3" variant="section-title">
-                                    Videos
-                                </Heading>
-                                <p>{t('dev')}</p>
-                            </Section>
-                        </Box>
+                    <Box bg="transparent" align="center" mt={5}>
+                        <Profile />
+                        <Section delay={0.3}>
+                            <Heading as="h3" variant="section-title">
+                                Videos
+                            </Heading>
+                            <p>{t('dev')}</p>
+                        </Section>
                     </Box>
                 </Box>
-            </Container>
-        </BgImage>
+            </Box>
+        </Container>
     )
 }
 
