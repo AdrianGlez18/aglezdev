@@ -6,13 +6,13 @@ import useTranslation from 'next-translate/useTranslation'
 import styled from '@emotion/styled'
 import ThemeButton from './themeButton'
 import LangButton from "./langButton";
-//import { IoLogoGithub } from 'react-icons/io5'
+import Player from "./player";
 
 const LinkItem = ({ href, currentPath, _target, children, ...props }) => {
   const isActive = (currentPath === href)
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   const activeBgColor = useColorModeValue('grassTeal', 'grassTeal', "grassTeal")
-  
+
   return (
     <NextLink href={href} passHref>
       <Link
@@ -79,10 +79,9 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={3} align="right">
-        <LangButton lang={lang}/>
+        <Player url='/music/bg.mp3' />
+          <LangButton lang={lang} />
           <ThemeButton />
-          
-
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -104,7 +103,7 @@ const Navbar = props => {
                 <NextLink href="/videos" passHref>
                   <MenuItem as={Link}>Videos</MenuItem>
                 </NextLink>
-                
+
               </MenuList>
             </Menu>
           </Box>

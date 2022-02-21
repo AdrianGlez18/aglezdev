@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { chakra, shouldForwardProp } from '@chakra-ui/react'
 
 export const StyledDiv = chakra(motion.div, {
@@ -9,6 +9,7 @@ export const StyledDiv = chakra(motion.div, {
 })
 
 export const Section = ({ children, delay = 0 }) => (
+  <AnimatePresence exitBeforeEnter initial={true}>
   <StyledDiv
     initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
@@ -17,6 +18,7 @@ export const Section = ({ children, delay = 0 }) => (
   >
     {children}
   </StyledDiv>
+  </AnimatePresence>
 )
 
 export const Paragraph = styled.p`

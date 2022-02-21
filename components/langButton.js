@@ -26,7 +26,7 @@ const LangButton = ({lang}) => {
           onClick={async () => {
             //const { t, lang } = useTranslation('common');
             await setLanguage(lang === 'es' ? 'en' : 'es')}}
-          colorScheme={useColorModeValue('blue', 'red')}
+          colorScheme={useColorModeValue('blue', 'yellow')}
         >{getLangFlag(lang)}</Button>
         
       </motion.div>
