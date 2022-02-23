@@ -6,8 +6,7 @@ import useTranslation from 'next-translate/useTranslation'
 import styled from '@emotion/styled'
 import ThemeButton from './themeButton'
 import LangButton from "./langButton";
-//import Player from "./player";
-import dynamic from 'next/dynamic'
+import Player from "./player";
 
 const LinkItem = ({ href, currentPath, _target, children, ...props }) => {
   const isActive = (currentPath === href)
@@ -32,7 +31,7 @@ const LinkItem = ({ href, currentPath, _target, children, ...props }) => {
 const Navbar = props => {
   const { path } = props
   const { t, lang } = useTranslation('common');
-  const Player = dynamic(() => import('./player'), { ssr: false })
+  //const Player = dynamic(() => import('./player'), { ssr: false })
 
   return (
     <Box
