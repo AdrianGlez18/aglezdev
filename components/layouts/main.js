@@ -11,7 +11,15 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8}>
             <Head>
                 <title>Aglez Dev - Home </title>
+                <meta name="description" content="Portfolio to show all my skills, projects and posts." />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="twitter:title" content="AglezDev" />
+                <meta property="og:title" content="AglezDev" />
+                <meta property="og:image" content="/og.png" />
+                <meta property="og:description" content="Portfolio to show all my skills, projects and posts." />
+                <meta property="og:url" content="https://aglez.dev" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
             <Navbar path={router.asPath} /> 
