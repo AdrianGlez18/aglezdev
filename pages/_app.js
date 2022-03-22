@@ -3,13 +3,13 @@ import Layout from "../components/layouts/main";
 import theme from "../lib/theme";
 import { AnimatePresence } from 'framer-motion'
 import { useEffect } from "react";
+import { initGA } from "../lib/ga";
 import ReactGA from 'react-ga';
 
 const Web = ({ Component, pageProps, router }) => {
-    ReactGA.initialize('G-0LJT87N0WG');
     useEffect(() => {
         if (!window.GA_INITIALIZED) {
-            ReactGA.init();
+            initGA();
             window.GA_INITIALIZED = true;
         }
     });

@@ -3,10 +3,17 @@ import { Box, Container } from "@chakra-ui/react";
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 import Snowfall from "react-snowfall";
 import Navbar from "../navbar";
-import React from "react" 
+import React from "react"
+import {useEffect} from 'react';
+import { logPageView } from "../../lib/ga";
 React.useLayoutEffect = React.useEffect 
 
 const Main = ({ children, router }) => {
+    //Analytics
+    useEffect(() => {
+        logPageView();
+    });
+
     return (
         <Box as="main" pb={8}>
             <Head>
