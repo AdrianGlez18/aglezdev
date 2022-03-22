@@ -2,8 +2,13 @@ import { ChakraProvider } from "@chakra-ui/provider";
 import Layout from "../components/layouts/main";
 import theme from "../lib/theme";
 import { AnimatePresence } from 'framer-motion'
+import { useEffect } from "react";
+import ReactGA from 'react-ga';
 
 const Web = ({ Component, pageProps, router }) => {
+    useEffect(() => {
+        ReactGA.initialize('G-0LJT87N0WG');
+    });
     return (
         <ChakraProvider theme={theme}>
             <Layout router={router}>

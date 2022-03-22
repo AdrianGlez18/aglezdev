@@ -54,6 +54,16 @@ const Home = () => {
                                 <Tag size={'md'} key={'solidity'} variant='solid' colorScheme='teal'>Solidity</Tag>
                                 <Tag size={'md'} key={'web3'} variant='solid' colorScheme='teal'>Web3 (EVM + React/Next)</Tag>
                             </Wrap>
+                            <Heading as="h4" variant="section-sub-title">
+                                General
+                            </Heading>
+                            <Wrap spacing={3} align='center' justify='center'>
+                                <Tag size={'md'} key={'c'} variant='solid' colorScheme='teal'>C++</Tag>
+                                <Tag size={'md'} key={'cs'} variant='solid' colorScheme='teal'>C#</Tag>
+                                <Tag size={'md'} key={'python'} variant='solid' colorScheme='teal'>Python</Tag>
+                                <Tag size={'md'} key={'sql'} variant='solid' colorScheme='teal'>SQL</Tag>
+                                <Tag size={'md'} key={'rust'} variant='solid' colorScheme='teal'>Rust (learning)</Tag>
+                            </Wrap>
                         </Section>
                     </Box>
                 </Box>
