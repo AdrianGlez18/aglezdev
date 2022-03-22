@@ -2,8 +2,6 @@ import { ChakraProvider } from "@chakra-ui/provider";
 import Layout from "../components/layouts/main";
 import theme from "../lib/theme";
 import { AnimatePresence } from 'framer-motion'
-import { initGA } from "../lib/ga";
-initGA();
 
 const Web = ({ Component, pageProps, router }) => {
     return (
