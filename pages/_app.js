@@ -6,8 +6,12 @@ import { useEffect } from "react";
 import ReactGA from 'react-ga';
 
 const Web = ({ Component, pageProps, router }) => {
+    ReactGA.initialize('G-0LJT87N0WG');
     useEffect(() => {
-        ReactGA.initialize('G-0LJT87N0WG');
+        if (!window.GA_INITIALIZED) {
+            ReactGA.init();
+            window.GA_INITIALIZED = true;
+        }
     });
     return (
         <ChakraProvider theme={theme}>
