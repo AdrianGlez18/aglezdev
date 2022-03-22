@@ -7,7 +7,6 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import { Section } from "../components/customStyledComponents";
 import { getDarkHome, getLightHome } from "../lib/imageMode";
 import useTranslation from 'next-translate/useTranslation'
-import ReactGA from 'react-ga';
 import '../i18n.json'
 
 const Profile = () => {
@@ -52,7 +51,7 @@ const Profile = () => {
 export default Profile;
 
 const handleLinkedinClick = () => {
-    ReactGA.event({
+    ga.event({
         category: 'Social',
         action: 'Linkedin',
         label: 'Layout Linkedin Clicked'
@@ -60,7 +59,7 @@ const handleLinkedinClick = () => {
 }
 
 const handleGithubClick = () => {
-    ReactGA.event({
+    ga.event({
         category: 'Social',
         action: 'Github',
         label: 'Layout Github Clicked'
