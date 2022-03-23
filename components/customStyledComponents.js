@@ -25,3 +25,9 @@ export const Paragraph = styled.p`
 text-align: justify;
 text-indent: 1em;
 `
+
+export const RoundedFeaturedDiv = styled.div`
+border-radius: 10%;
+overflow: hidden;
+position: relative;
+`

@@ -1,0 +1,15 @@
+{
+    "worktitle": "PDF Heaven",
+    "sub_1": "¿Qué es PDF Heaven?",
+    "info_1": "PDF Heaven es una aplicación web gratuita y de código libre creada para trabajar con archivos PDF.",
+    "sub_2": "Funciones principales",
+    "info_2": "Actualmente, la página cuenta con las siguientes funciones:",
+    "info_2_1": "Unir PDFs: Permite combinar varios ficheros PDF en uno solo.",
+    "info_2_2": "Imágenes a PDFs: Con esta función, puedes subir varias imágenes y se generará un pdf que las contenga.",
+    "info_2_3": "Eliminar páginas de PDF: Permite retirar una o más páginas de un PDF, sin cambair el orden del resto.",
+    "sub_3": "Futuras actualizaciones",
+    "info_3_0": "Corrección de bugs, como las miniaturas de los PDF o el problema al eliminar varios intervalos de páginas.",
+    "info_3_1": "Dividir PDFs: Genera varios ficheros PDF desde uno solo.",
+    "info_3_2": "Extraer páginas PDF: Similar a eliminar páginas, pero descarga las páginas seleccionadas en archivos pdf individuales.",
+    "info_3_3": "Mejoras de diseño"
+}

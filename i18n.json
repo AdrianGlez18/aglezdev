@@ -2,8 +2,9 @@
     "locales": ["en", "es"],
     "defaultLocale": "en",
     "pages": {
-      "*": ["common"],
+      "*": ["common", "works"],
       "/": ["home"],
-      "/works": ["works"]
+      "/works": ["works"],
+      "/works/pdfheaven": ["works", "pdfheaven"]
     }
   }

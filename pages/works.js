@@ -1,7 +1,5 @@
 import { Box, Container, Heading, Image, HStack, VStack, Tag, SimpleGrid, Divider } from "@chakra-ui/react";
 import Head from "next/head";
-import Link from "next/link";
-import styled from "@emotion/styled";
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { Section } from "../components/customStyledComponents";
 import { WorkItem } from "../components/work";
