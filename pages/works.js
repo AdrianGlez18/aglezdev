@@ -26,7 +26,6 @@ const Works = () => {
                 </Head>
 
                 <Box flexGrow={1}>
-
                     <Box bg="transparent" align="center" mt={5}>
                         <Profile />
                         <Section delay={0.3}>
@@ -48,6 +47,19 @@ const Works = () => {
                                 <Section>
                                     <WorkItem id="jtiapp" title="JTI Mobile App" imageSource="/jtiapp.jpg" tags={['Mobile', 'Flutter', 'Finished']} size={[270, 480]}>
                                         {t('jtiapp')}
+                                    </WorkItem>
+                                </Section>
+                            </SimpleGrid>
+                        </Section>
+                        <Section delay={0.3}>
+                            <Heading as="h4" variant="section-title">
+                                {t('secondary_title')}
+                            </Heading>
+                            <p>{t('secondary_desc')}</p>
+                            <SimpleGrid columns={[1, 1, 2]} spacing={5}>
+                                <Section>
+                                    <WorkItem id="crypto_svelte" title="Crypto Market Prices in Svelte" imageSource="/crypto_svelte.png" tags={['Web', 'Svelte', 'Ongoing']} size={[1920, 1080]}>
+                                        {t('jtiweb')}
                                     </WorkItem>
                                 </Section>
                             </SimpleGrid>
