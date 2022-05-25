@@ -5,6 +5,8 @@
       "*": ["common", "works"],
       "/": ["home"],
       "/works": ["works"],
-      "/works/pdfheaven": ["works", "pdfheaven"]
+      "/works/pdfheaven": ["works", "pdfheaven"],
+      "/works/jtiapp": ["works", "jti"],
+      "/works/jtiweb": ["works", "jti"]
     }
   }
