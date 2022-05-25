@@ -9,6 +9,9 @@ import '../../i18n.json'
 const Home = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     const { t, lang } = useTranslation("jti");
+    const demo = "https://play.google.com/store/apps/details?id=com.jti.jtiesitapp";
+    const code = "https://github.com/AdrianGlez18/jti-app-flutter";
+    const details = {"git" : code, "live" : demo};
     return (
         <Container>
             <Box display={{ md: 'flex' }}>
@@ -19,9 +22,9 @@ const Home = () => {
                                 <Heading as="h3" variant="section-title" mb={8}>
                                     {t('worktitle')}
                                 </Heading>
-                                <WorkFeatured id="pdfheaven" title="JTI App" imageSource="/jtiapp.jpg" tags={['Mobile', 'Flutter', 'Finished']} size={[270, 480]} />
+                                <WorkFeatured id="pdfheaven" title="JTI App" imageSource="/jtiapp.jpg" tags={['Mobile', 'Flutter', 'Finished']} size={[270, 480]} details={details}/>
                                 <Box mt={3}>
-                                    <p>https://play.google.com/store/apps/details?id=com.jti.jtiesitapp</p>
+                                    <p></p>
                                 </Box>
                                 <Heading as="h4" variant="section-title" mb={8} mt={5}>
                                     {t('sub_1')}
@@ -31,22 +34,18 @@ const Home = () => {
                                     {t('sub_2')}
                                 </Heading>
                                 <p>{t('info_2')}</p>
-                                <Box mt={3}>
+                                <Box mt={3} alignContent="left" alignItems={"left"} textAlign="left" p={2} ml={7}>
                                 <ul>
                                     <li>{t('info_2_1')}</li>
                                     <li>{t('info_2_2')}</li>
                                     <li>{t('info_2_3')}</li>
+                                    <li>{t('info_2_4')}</li>
+                                    <li>{t('info_2_5')}</li>
                                 </ul>
                                 </Box>
                                 <Heading as="h4" variant="section-title" mb={8} mt={5}>
                                     {t('sub_3')}
                                 </Heading>
-                                <ul>
-                                <li>{t('info_3_0')}</li>
-                                    <li>{t('info_3_1')}</li>
-                                    <li>{t('info_3_2')}</li>
-                                    <li>{t('info_3_3')}</li>
-                                </ul>
                             </Section>
                         </WorkLayout>
                     </Box>

@@ -1,15 +1,13 @@
 {
     "worktitle": "JTI App",
-    "sub_1": "What is PDF Heaven?",
-    "info_1": "PDF Heaven is a free to use and open source web to work with PDF files.",
-    "sub_2": "Main functions",
-    "info_2": "Currently, the site has the following functions:",
-    "info_2_1": "Join PDFs: This will allow you to merge different PDF files into one.",
-    "info_2_2": "Images to PDFs: This will allow you to convert multiple images to pdf and join them automatically.",
-    "info_2_3": "Remove PDF pages: With this function, you can choose which pages from a pdf you want to delete.",
-    "sub_3": "Future updates",
-    "info_3_0": "Debug: PDF miniatures and error while trying to remove multiple PDF intervals of pages.",
-    "info_3_1": "Split PDFs: This will allow you to split a PDF file into multiple files.",
-    "info_3_2": "Extract PDF: Similar to Remove PDF function, but you get the pages extracted instead of the join of the other pages",
-    "info_3_3": "Design updates"
+    "sub_1": "What does JTI means?",
+    "info_1": "JTI (Jornadas Técnicas de Ingeniería) is a tech event that occurs every year in Tenerife, Spain. Many companies and organizations come to the event to do some talks, workshops and have a presence in the event' stands.",
+    "sub_2": "What is this app for?",
+    "info_2": "The app was developed to be a swiss army knife for the event. Its main function is to facilitate the flow of information between companies/organizations and assistants, but it can do much more. This are its functions:",
+    "info_2_1": "Generate QR codes with users LinkedIn/GitHub/Portfolio information to show to companies.",
+    "info_2_2": "Scan QRs and store the candidates' profiles in a local database.",
+    "info_2_3": "Generate a PDF file with all the information received.",
+    "info_2_4": "Display information about talks and stands.",
+    "info_2_5": "Give access to a free WiFi during the event.",
+    "sub_3": "Scans"
 }

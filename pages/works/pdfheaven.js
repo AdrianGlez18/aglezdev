@@ -19,7 +19,7 @@ const Home = () => {
                                 <Heading as="h3" variant="section-title" mb={8}>
                                     {t('worktitle')}
                                 </Heading>
-                                <WorkFeatured id="pdfheaven" title="PDF Heaven" imageSource="/pdfheaven.png" tags={['Web', 'NextJS', 'NodeJS']} size={[1920, 1080]} />
+                                <WorkFeatured id="pdfheaven" title="PDF Heaven" imageSource="/pdfheaven.png" tags={['Web', 'NextJS', 'NodeJS']} size={[1920, 1080]} warning/>
                                 <Heading as="h4" variant="section-title" mb={8} mt={5}>
                                     {t('sub_1')}
                                 </Heading>

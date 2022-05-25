@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Box, Text, Tag, LinkBox, LinkOverlay, HStack, VStack } from '@chakra-ui/react';
 import { RoundedFeaturedDiv } from './customStyledComponents';
+import Details from "./details";
 
 export const Work = ({ children, href, title, imageSource, tags }) => {
     return (
@@ -57,23 +58,26 @@ export const WorkItem = ({ children, id, title, imageSource, tags, size }) => {
     )
 }
 
-export const WorkFeatured = ({ children, id, title, imageSource, tags, size }) => {
+export const WorkFeatured = ({ children, id, title, imageSource, tags, size, warning, details }) => {
+
+    const wr = warning ? (
+        <Box w={"100%"} align="center" mt={3}>
+            <p mt={5}>
+                Warning: The website is still under construction. There are some bugs and some features in development might not work properly.
+            </p>
+        </Box>
+    ) : "";
+
     return (
         <Box w={"100%"} align="center" mb={3}>
 
             <RoundedFeaturedDiv mt={5} mb={5}>
                 <img src={imageSource} alt={title} width={size[0]} height={size[1]} />
             </RoundedFeaturedDiv>
-            <Box w={"100%"} align="center" mt={3}>
-                <p mt={5}>
-                    Website: <a href="https://pdfheaven.netlify.app/" target="_blank">{title}</a>
-                </p>
-            </Box>
-            <Box w={"100%"} align="center" mt={3}>
-                <p mt={5}>
-                    Warning: The website is still under construction. There are some bugs and some features in development might not work properly.
-                </p>
-            </Box>
+            <Details data={details}/>
+            {
+                wr
+            }
             <VStack>
                 <HStack spacing={2} mt={5} mb={5}>
                     {
