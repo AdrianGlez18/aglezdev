@@ -59,7 +59,7 @@ const Works = () => {
                             <SimpleGrid columns={[1, 1, 2]} spacing={5}>
                                 <Section>
                                     <WorkItem id="crypto_svelte" title="Crypto Market Prices in Svelte" imageSource="/crypto_svelte.png" tags={['Web', 'Svelte', 'Ongoing']} size={[1920, 1080]}>
-                                        {t('jtiweb')}
+                                        {t('crypto_svelte')}
                                     </WorkItem>
                                 </Section>
                             </SimpleGrid>
