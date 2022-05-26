@@ -1,0 +1,16 @@
+{
+    "worktitle": "Plantilla web - React con Vite + Firebase Auth + Chakra-UI",
+    "sub_1": "Introducción",
+    "info_1": "This is a complete Firebase authentication system with React, Vite and Chakra-UI. The app does not have any functionality by itself, but it is a template to use for any app that requires authentication with firebase.",
+    "sub_2": "Funcionalidades",
+    "info_2": "Desarrollar aplicaciones con autenticación siempre lleva bastante tiempo. Sin embargo, una parte considerable de ese tiempo se podría ahorrar usando una plantilla ya configurada para iniciar los proyectos.",
+    "info_2_0": "Si la aplicación web no requiere de una gestión muy extensiva de los datos de los usuarios, y únicamente se busca tener un sistema de autenticación sencillo, firebase suele ser una buena opción.",
+    "info_2_1": "Frontend básico con React. Usa Vite en lugar de webpack como empaquetador, debido a su gran optimización.",
+    "info_2_2": "Sistema de registro, inicio y cierre de sesión con Firebase Auth usando email y contraseña.",
+    "info_2_3": "Rutas protegidas específicas para usuarios loggeados, y otras para usuarios sin sesión iniciada.",
+    "info_2_4": "Ruta básica de perfil de usuario, con opción de cambiar el email asociado a la cuenta.",
+    "info_2_5": "Recuperación de contraseña perdida mediante email.",
+    "info_2_6": "Contexto de React ya configurado para almacenar posible información adicional en la sesión del usuario.",
+    "info_2_7": "Tema oscuro por defecto configurado con Chakra-UI, con posibilidad de añadir fácilmente un botón de cambio de tema.",
+    "sub_3": "Capturas de pantalla"
+}

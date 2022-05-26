@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image, Stack, HStack, VStack, Tag, WrapItem, Wrap } from "@chakra-ui/react";
+import { Box, Container, Heading, Tag, Wrap } from "@chakra-ui/react";
 import Snowfall from "react-snowfall";
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { Section } from "../components/customStyledComponents";

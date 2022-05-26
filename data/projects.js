@@ -25,7 +25,7 @@ export const projects = [
         "title": "Web Starter - React + Vite + Firebase Auth",
         "imageSource": "/reactvite.png",
         "tags": ['Web', 'React', 'Firebase', 'Auth', 'Finished'],
-        "size": [270, 480]
+        "size": [1920, 1080]
     }
 ]
 

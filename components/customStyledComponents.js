@@ -31,3 +31,7 @@ border-radius: 10%;
 overflow: hidden;
 position: relative;
 `
+
+export const ListElement = styled.li`
+  margin: 1rem;
+`
