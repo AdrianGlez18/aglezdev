@@ -38,7 +38,7 @@ const Works = () => {
                                 {
                                     projects.map(project => {
                                         return (
-                                            <Section>
+                                            <Section key={project.id}>
                                                 <WorkItem id={project.id} title={project.title} imageSource={project.imageSource} tags={project.tags} size={project.size}>
                                                     {t('jtiweb')}
                                                 </WorkItem>

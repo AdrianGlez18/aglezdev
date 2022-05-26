@@ -37,7 +37,7 @@ const Profile = () => {
                         <VStack bg="transparent" align="center" >
                             <HStack spacing={8} align="center" mt={10} mb={5}>
                                 <a href="https://www.linkedin.com/in/adri%C3%A1n-gonz%C3%A1lez-hern%C3%A1ndez/" target="_blank norreferer" onClick={handleLinkedinClick}><FaLinkedin size="2em" /></a>
-                                <a href="https://github.com/AdrianGlez18" target="_blank" onClick={handleGithubClick}><FaGithub size="2em" /></a>
+                                <a href="https://github.com/AdrianGlez18" target="_blank norreferer" onClick={handleGithubClick}><FaGithub size="2em" /></a>
                                 <a href="mailto:contact@aglez.dev" target="_blank norreferer"><FaEnvelope size="2em" /></a>
                             </HStack>
                         </VStack>

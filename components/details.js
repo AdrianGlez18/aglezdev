@@ -11,9 +11,9 @@ import { logEvent } from "../lib/ga";
 import '../i18n.json'
 
 const Details = ({ data }) => {
-    const sourceCode = data["git"] ? <a href={data["git"]} target="_blank" onClick={handleGithubClick} aria-label="Check the source code!" title="Check the source code!"><FaGithub size="2em" /></a> : "";
-    const liveDemo = data["live"] ? <a href={data["live"]} target="_blank" onClick={handleLinkClick} aria-label="Try it!" title="Try it!"><FaLink size="2em" /></a> : "";
-    const videoResume = data["video"] ? <a href={data["video"]} target="_blank" onClick={handleVideoClick} aria-label="Watch a video about it" title="Watch a video about it"><FaYoutube size="2em" /></a> : "";
+    const sourceCode = data["git"] ? <a href={data["git"]} target="_blank" rel="noreferrer" onClick={handleGithubClick} aria-label="Check the source code!" title="Check the source code!"><FaGithub size="2em" /></a> : "";
+    const liveDemo = data["live"] ? <a href={data["live"]} target="_blank" rel="noreferrer" onClick={handleLinkClick} aria-label="Try it!" title="Try it!"><FaLink size="2em" /></a> : "";
+    const videoResume = data["video"] ? <a href={data["video"]} target="_blank" rel="noreferrer" onClick={handleVideoClick} aria-label="Watch a video about it" title="Watch a video about it"><FaYoutube size="2em" /></a> : "";
     return (
         <Container>
             <Box display={{ md: 'flex' }}>

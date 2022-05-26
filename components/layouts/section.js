@@ -37,7 +37,7 @@ const Layout = ({ children, router }) => {
                         )}
                         {children}
 
-                        <GridItemStyle />
+                        {/*<GridItemStyle />*/ }
                     </>
                 </motion.article>
             </Container>
