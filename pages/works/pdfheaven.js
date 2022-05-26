@@ -9,6 +9,9 @@ import '../../i18n.json'
 const Home = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     const { t, lang } = useTranslation('pdfheaven');
+    const demo = "https://pdfheaven.netlify.app/";
+    const code = "https://github.com/AdrianGlez18/PDF-Heaven";
+    const details = {"git" : code, "live" : demo};
     return (
         <Container>
             <Box display={{ md: 'flex' }}>
@@ -19,7 +22,7 @@ const Home = () => {
                                 <Heading as="h3" variant="section-title" mb={8}>
                                     {t('worktitle')}
                                 </Heading>
-                                <WorkFeatured id="pdfheaven" title="PDF Heaven" imageSource="/pdfheaven.png" tags={['Web', 'NextJS', 'NodeJS']} size={[1920, 1080]} warning/>
+                                <WorkFeatured id="pdfheaven" title="PDF Heaven" imageSource="/pdfheaven.png" tags={['Web', 'NextJS', 'NodeJS']} size={[1920, 1080]} warning details={details}/>
                                 <Heading as="h4" variant="section-title" mb={8} mt={5}>
                                     {t('sub_1')}
                                 </Heading>

@@ -5,6 +5,7 @@ import { Section } from "../components/customStyledComponents";
 import { WorkItem } from "../components/work";
 import useTranslation from 'next-translate/useTranslation'
 import Profile from "../components/profile";
+import { projects } from "../data/projects";
 
 const Works = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -34,21 +35,17 @@ const Works = () => {
                             </Heading>
                             <p>{t('desc')}</p>
                             <SimpleGrid columns={[1, 1, 2]} spacing={5}>
-                                <Section>
-                                    <WorkItem id="jtiweb" title="JTI Web" imageSource="/jtiweb.png" tags={['Web', 'React', 'NextJS', 'Finished']} size={[1920, 1080]}>
-                                        {t('jtiweb')}
-                                    </WorkItem>
-                                </Section>
-                                <Section>
-                                    <WorkItem id="pdfheaven" title="PDF Heaven" imageSource="/pdfheaven.png" tags={['Web', 'NextJS', 'Ongoing']} size={[1920, 1080]}>
-                                        {t('pdfheaven')}
-                                    </WorkItem>
-                                </Section>
-                                <Section>
-                                    <WorkItem id="jtiapp" title="JTI Mobile App" imageSource="/jtiapp.jpg" tags={['Mobile', 'Flutter', 'Finished']} size={[270, 480]}>
-                                        {t('jtiapp')}
-                                    </WorkItem>
-                                </Section>
+                                {
+                                    projects.map(project => {
+                                        return (
+                                            <Section>
+                                                <WorkItem id={project.id} title={project.title} imageSource={project.imageSource} tags={project.tags} size={project.size}>
+                                                    {t('jtiweb')}
+                                                </WorkItem>
+                                            </Section>
+                                        )
+                                    })
+                                }
                             </SimpleGrid>
                         </Section>
                         <Section delay={0.3}>
