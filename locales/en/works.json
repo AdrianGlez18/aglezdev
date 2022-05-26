@@ -7,5 +7,6 @@
     "pdfheaven_p1": "Open source web app to work with pdfs (Join PDF, convert images, remove pages...)",
     "secondary_title": "Other projects",
     "secondary_desc": "Tiny or casual projects to learn and practice new frameworks or technologies.",
-    "crypto_svelte": "Website that shows crypto market prices using an external API. Created with Svelte to get in touch with the framework."
+    "crypto_svelte": "Website that shows crypto market prices using an external API. Created with Svelte to get in touch with the framework.",
+    "react-vite-auth": "Web starter with React + Vite, Firebase Auth and Chakra-UI. It includes protected routes and account management."
 }
