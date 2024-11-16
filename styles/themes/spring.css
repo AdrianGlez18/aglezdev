@@ -1,0 +1,16 @@
+/* html[data-theme="spring"] {
+    --color-primary: #f4cc70;
+    --color-secondary: #6ab187;
+    --color-buttons: #de7a22;
+    --color-typography: #20948b;
+    } */
+
+    html[data-theme="spring"] {
+        --color-primary: #C8E6C9;
+        --color-secondary: #FADADD;
+        --color-tertiary: #BBDEFB;
+        --color-buttons: #FFF9C4;
+        --color-typography: #20948b;
+        }
+
+  
