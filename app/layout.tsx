@@ -1,12 +1,8 @@
 "use client"
 
-import type { Metadata } from "next";
-import { RecoilRoot, useRecoilState } from 'recoil'
+import { RecoilRoot } from 'recoil'
 import localFont from "next/font/local";
 import "@/styles/globals.css";
-import { changeTheme } from "@/lib/utils";
-import RenderThemeSfx from "@/components/shared/layout/RenderThemeSfx";
-import { themeState } from "@/lib/recoilStates";
 import SfxContainer from "@/components/shared/layout/SfxContainer";
 
 const geistSans = localFont({

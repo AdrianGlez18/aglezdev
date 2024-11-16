@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import ProjectCard from '../ProjectCard';
-import { projects } from '@/constants/projects';
-import Logos from '../Logos';
 
 const Education = () => {
     const [entering, setEntering] = useState(true);

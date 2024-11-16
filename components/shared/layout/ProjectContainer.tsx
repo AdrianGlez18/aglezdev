@@ -5,11 +5,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { projects } from '@/constants/projects'
 import { useRouter } from 'next/navigation';
-import { FaLink, FaGithub, FaEnvelope, FaHome } from 'react-icons/fa'
+import { FaLink, FaGithub, FaHome } from 'react-icons/fa'
 import ThemeButton from '../ThemeButton'
 import {
     Breadcrumb,
-    BreadcrumbEllipsis,
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbList,
@@ -19,8 +18,8 @@ import {
 
 const ProjectContainer = ({ children, postData }: any) => {
     const index = postData.index;
-    let nextProject = projects[index + 1] || projects[0];
-    let previousProject = projects[index - 1] || projects[projects.length - 1];
+    const nextProject = projects[index + 1] || projects[0];
+    const previousProject = projects[index - 1] || projects[projects.length - 1];
     const gitUrl = postData.github === "" ? undefined : postData.github;
     const linkUrl = postData.url === "" ? undefined : postData.url;
 

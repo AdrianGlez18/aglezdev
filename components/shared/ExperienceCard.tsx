@@ -1,7 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 
-const ExperienceCard = ({item}: any) => {
+type experienceType = {
+    id: number,
+    title: string,
+    dates: string,
+    content: string,
+    img: string
+}
+
+const ExperienceCard = ({item}: {item: experienceType}) => {
     return (
         <div
             className="flex flex-col rounded-xl bg-secondary text-surface shadow-secondary-1 md:max-w-xl md:flex-row">

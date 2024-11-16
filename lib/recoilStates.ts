@@ -1,4 +1,4 @@
-import {atom, selector} from 'recoil';
+import {atom} from 'recoil';
 
 declare type langType = "es" | "en" | "fr";
 export type themeType = "spring" | "summer" | "fall" | "winter" | "dark-spring" | "dark-summer" | "dark-fall" | "dark-winter";

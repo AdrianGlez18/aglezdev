@@ -1,7 +1,7 @@
 "use client"
 
 import { changeTheme } from '@/lib/utils';
-import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
+import { SunIcon } from '@heroicons/react/24/solid';
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -9,9 +9,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { useState } from 'react';
-import {useRecoilState} from 'recoil';
-import { localeState, themeState, themeType } from '@/lib/recoilStates';
+import { useRecoilState } from 'recoil';
+import { themeState, themeType } from '@/lib/recoilStates';
 
 function ThemeButton() {
 
@@ -20,7 +19,7 @@ function ThemeButton() {
   const setTheme = (theme: themeType) => {
     changeTheme(theme)
     setCurrentTheme(theme)
-    /* console.log(currentTheme) */
+    console.log(currentTheme)
   }
 
   return (
@@ -28,8 +27,7 @@ function ThemeButton() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon" className='bg-buttons m-2'>
           <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-{/*           <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
- */}          <span className="sr-only">Toggle theme</span>
+          {/* <span className="sr-only">Toggle theme</span> */}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className='bg-primary'>

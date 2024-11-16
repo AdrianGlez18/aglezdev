@@ -3,7 +3,7 @@ import React from 'react'
 import { useRecoilState } from 'recoil';
 import RenderThemeSfx from './RenderThemeSfx';
 
-const SfxContainer = ({children}: any) => {
+const SfxContainer = ({children}: {children: React.ReactNode}) => {
     const [currentTheme, setCurrentTheme] = useRecoilState(themeState);
   return (
     <div>
