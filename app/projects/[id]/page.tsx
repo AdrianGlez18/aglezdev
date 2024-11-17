@@ -1,6 +1,5 @@
-
 import React from 'react'
-import { projects } from '@/constants/projects'
+import { projects, projectType } from '@/constants/projects'
 import { redirect } from 'next/navigation';
 import MHDB from '@/posts/mdx/mhdb.mdx'
 import ReactViteAuth from '@/posts/mdx/react-vite-auth.mdx'
@@ -15,7 +14,7 @@ const renderPost =  {
     "spainary": <Spainary/>,
     "jtiweb": <JTIWeb/>,
     "jtiapp": <JTIApp/>
-}
+} as const;
 
 const ProjectDetails = ({ params }: any) => {
 
@@ -29,11 +28,13 @@ const ProjectDetails = ({ params }: any) => {
     }
 
     const item = prjs[0];
+    const project: projectType = projects[item.index]
+    const postId: keyof typeof renderPost = project.id as keyof typeof renderPost
     
 
     return (
-        <ProjectContainer postData={projects[item.index]}>
-            {renderPost[id]}
+        <ProjectContainer postData={project}>
+            {renderPost[postId]}
         </ProjectContainer>
     )
 }
