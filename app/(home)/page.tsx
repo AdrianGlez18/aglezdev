@@ -25,7 +25,7 @@ export default function Home() {
       <div className="flex flex-col w-full gap-4 items-center justify-center">
         <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
         {
-          sectionMap[currentSection]
+          sectionMap[currentSection as keyof typeof sectionMap]
         }
         <Footer />
       </div>
