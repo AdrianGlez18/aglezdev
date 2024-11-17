@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { projects } from '@/constants/projects'
+import { projects, projectType } from '@/constants/projects'
 import { useRouter } from 'next/navigation';
 import { FaLink, FaGithub, FaHome } from 'react-icons/fa'
 import ThemeButton from '../ThemeButton'
@@ -16,7 +16,7 @@ import {
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb"
 
-const ProjectContainer = ({ children, postData }: any) => {
+const ProjectContainer = ({ children, postData }: {children: React.ReactNode, postData: projectType}) => {
     const index = postData.index;
     const nextProject = projects[index + 1] || projects[0];
     const previousProject = projects[index - 1] || projects[projects.length - 1];

@@ -1,3 +1,16 @@
+export type projectType = {
+    "index": number,
+    "id": string,
+    "title": string,
+    "description": string,
+    "imageSource": string,
+    "tags": string[],
+    "size": number[],
+    "main": boolean,
+    "github": string,
+    "url": string
+}
+
 export const projects = [
     {
         "index": 0,
