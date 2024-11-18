@@ -1,6 +1,14 @@
-html[data-theme="fall"] {
+/*  html[data-theme="fall"] {
     --color-primary: #F4A261;
     --color-secondary: #D18B47;
     --color-buttons: #E07A5F;
     --color-typography: #4A4A4A;
-    }
+    }  */
+
+    html[data-theme="fall"] {
+        --color-primary: #E6D5C3;
+        --color-secondary: #FBC4A3;
+        --color-tertiary: #D4E4C3;
+        --color-buttons: #F9E2AE;
+        --color-typography: #716961;
+        }

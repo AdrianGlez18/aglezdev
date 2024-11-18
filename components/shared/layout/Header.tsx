@@ -80,7 +80,7 @@ const Header = ({ currentSection, setCurrentSection }: { currentSection: string,
                         navLinks.slice(0, 6).map((link) => {
                             const isActive = link.href === currentSection
                             return (
-                                <li onClick={() => setCurrentSection(link.href)} key={link.href} className={` group cursor-pointer ${isActive ? 'bg-purple-gradient text-white rounded-full' : 'text-gray-700 dark:text-gray-100'
+                                <li onClick={() => setCurrentSection(link.href)} key={link.href} className={` group cursor-pointer ${isActive ? 'bg-buttons py-2 px-4 text-white rounded-full' : 'text-gray-700 dark:text-gray-100'
                                     }`}>
                                     {/*                                     <Link className='header-link' href={link.href}>
                                         {link.label}

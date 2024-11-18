@@ -8,7 +8,7 @@ const FallingLeaves = () => {
 
     useEffect(() => {
         const container = containerRef.current;
-        const numberOfLeaves = 20;
+        const numberOfLeaves = 25;
 
         for (let i = 0; i < numberOfLeaves; i++) {
             const leaf = document.createElement('div');

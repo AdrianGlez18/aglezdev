@@ -1,4 +1,4 @@
-.falling-leaves-container {
+.summer-bubbles-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,22 +10,21 @@
 
 }
 
-.leaf {
+.bubble {
     position: absolute;
-    top: -10vh;
+    left: -10vw;
     width: 30px;
     height: 30px;
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.8;
-    animation: fall 8s ease-in infinite;
+    animation: displace 15s ease-in infinite;
     transform-origin: center;
 }
 
-/* Animación de caída */
-@keyframes fall {
+@keyframes displace {
     to {
-        transform: translate(100px, 110vh) rotate(720deg);
+        transform: translate(110vw, 150px) rotate(720deg);
         /* La hoja se mueve lateralmente (100px) y gira 720 grados */
     }
 }
