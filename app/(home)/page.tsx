@@ -8,11 +8,15 @@ import Header from "@/components/shared/layout/Header";
 import Projects from "@/components/shared/sections/Projects";
 import About from "@/components/shared/sections/About";
 import Experience from "@/components/shared/sections/Experience";
+import Education from "@/components/shared/sections/Education";
+import Contact from "@/components/shared/sections/Contact";
 
 const sectionMap = {
   "/about": <About />,
   "/projects": <Projects />,
-  "/experience": <Experience />
+  "/experience": <Experience />,
+  "/education": <Education/>,
+  "/contact": <Contact/>
 }
 
 export default function Home() {

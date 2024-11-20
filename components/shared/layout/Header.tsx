@@ -24,7 +24,7 @@ const Header = ({ currentSection, setCurrentSection }: { currentSection: string,
 
     return (
 
-        <header className='flex flex-col gap-4 items-center justify-around'>
+        <header className='flex flex-col gap-4 items-center justify-around min-h-[40vh]'>
             {/* <Link href="/" className="flex items-center gap-2 md:py-2">
                 <span className='text-gray-800 font-bold ml-3 font-[family-name:var(--font-geist-sans)]'>AGLEZDEV</span>
             </Link> */}
@@ -55,7 +55,7 @@ const Header = ({ currentSection, setCurrentSection }: { currentSection: string,
                                             navLinks.slice(0, 6).map((link) => {
                                                 const isActive = link.href === currentSection
                                                 return (
-                                                    <li onClick={() => setCurrentSection(link.href)} key={link.href} className={` group cursor-pointer my-1 ${isActive ? 'bg-purple-gradient text-white rounded-full' : 'text-gray-700 dark:text-gray-100'
+                                                    <li onClick={() => setCurrentSection(link.href)} key={link.href} className={` group cursor-pointer my-1 ${isActive ? 'bg-purple-gradient text-typography rounded-full' : 'text-gray-700 dark:text-gray-100'
                                                         }`}>
                                                         {link.label}
                                                     </li>
@@ -80,7 +80,7 @@ const Header = ({ currentSection, setCurrentSection }: { currentSection: string,
                         navLinks.slice(0, 6).map((link) => {
                             const isActive = link.href === currentSection
                             return (
-                                <li onClick={() => setCurrentSection(link.href)} key={link.href} className={` group cursor-pointer ${isActive ? 'bg-buttons py-2 px-4 text-white rounded-full' : 'text-gray-700 dark:text-gray-100'
+                                <li onClick={() => setCurrentSection(link.href)} key={link.href} className={` group cursor-pointer ${isActive ? 'bg-buttons py-2 px-4 text-typography rounded-full' : 'text-gray-700 dark:text-gray-100'
                                     }`}>
                                     {/*                                     <Link className='header-link' href={link.href}>
                                         {link.label}
